@@ -1,0 +1,17 @@
+@plugin "tailwindcss-primeui";
+@variant dark (&:where(.dark, .dark *));
+
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @import "tailwindcss/theme.css";
+    @import "tailwindcss/preflight.css";
+}
+
+@layer tailwind-utilities {
+    @import "tailwindcss/utilities.css";
+}
+
+@theme {
+    /** tailwind theme config */
+}
