@@ -9,6 +9,7 @@
 }
 
 @layer tailwind-utilities {
+    @import "./colors.css";
     @import "tailwindcss/utilities.css";
 }
 
