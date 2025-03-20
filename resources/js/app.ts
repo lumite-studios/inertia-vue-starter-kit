@@ -2,7 +2,7 @@ import { createApp, h, type DefineComponent } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import AppLayout from '@/views/layouts/app.vue'
 import PrimeVue from 'primevue/config'
-import { preset } from './theme'
+import { passthrough, preset } from './theme'
 import '../css/app.css'
 
 createInertiaApp({
@@ -19,6 +19,7 @@ createInertiaApp({
         createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(PrimeVue, {
+                pt: passthrough,
                 ptOptions: {
                     mergeSections: true,
                     mergeProps: true
