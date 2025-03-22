@@ -33,7 +33,25 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './resources'),
+            '@components': path.resolve(__dirname, './resources/views/components'),
+            '@js': path.resolve(__dirname, './resources/js'),
+            '@layouts': path.resolve(__dirname, './resources/views/layouts'),
+            '@pages': path.resolve(__dirname, './resources/views/pages'),
+            '@types': path.resolve(__dirname, './resources/js/types'),
+        },
+    },
+    server: {
+        watch: {
+            ignored: [
+                '**/app/**',
+                '**/bootstrap/**',
+                '**/config/**',
+                '**/database/**',
+                '**/public/**',
+                '**/routes/**',
+                '**/storage/**',
+                '**/tests/**',
+            ],
         },
     },
 });

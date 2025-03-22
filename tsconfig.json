@@ -3,8 +3,20 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/*": [
-                "resources/*"
+            "@components": [
+                "resources/views/components"
+            ],
+            "@js/*": [
+                "resources/js/*"
+            ],
+            "@layouts/*": [
+                "resources/views/layouts/*"
+            ],
+            "@pages/*": [
+                "resources/views/pages/*"
+            ],
+            "@types/*": [
+                "resources/js/types/*"
             ],
         },
         "types": [
