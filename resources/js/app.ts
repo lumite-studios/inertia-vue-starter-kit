@@ -1,6 +1,6 @@
 import { createApp, h, type DefineComponent } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
-import AppLayout from '@/views/layouts/app.vue'
+import AppLayout from '@layouts/app.vue'
 import PrimeVue from 'primevue/config'
 import { passthrough, preset } from './theme'
 import '../css/app.css'

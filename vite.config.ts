@@ -37,7 +37,6 @@ export default defineConfig({
             '@js': path.resolve(__dirname, './resources/js'),
             '@layouts': path.resolve(__dirname, './resources/views/layouts'),
             '@pages': path.resolve(__dirname, './resources/views/pages'),
-            '@types': path.resolve(__dirname, './resources/js/types'),
         },
     },
     server: {
